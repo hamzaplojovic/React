@@ -1,0 +1,18 @@
+.nav {
+    height: 80px;
+    background-color: white;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem {
+    color: #333;
+    text-decoration: none;
+    margin: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+.navItem:hover {
+    border-bottom: 1px solid #333;
+}
