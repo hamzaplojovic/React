@@ -5,6 +5,9 @@ import Home from "./Home";
 import Page404 from "./Page404";
 import Team from "./Team";
 import Users from "./Users/Users";
+import User from "./User/User";
+import Product from "./Product/Product";
+import Products from "./Products/Products";
 
 const RouterPage = (props) => {
     return (
@@ -15,6 +18,9 @@ const RouterPage = (props) => {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/users" element={<Users />} />
+                <Route path="/user" element={<User />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:productId" element={<Product />} />
 
                 <Route path="*" element={<Page404 />} />
             </Routes>
