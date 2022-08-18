@@ -11,14 +11,16 @@ function Product() {
         { name: "djsdsddssdsdsdsdsdsdsdsdsdsds", id: 4 },
     ];
     console.log();
-    return (
-        <Layout>
-            <div>
-                <h1>{products[params.productId].name}</h1>
-                <h1>{products[params.productId].id}</h1>
-            </div>
-        </Layout>
-    );
+    {
+        products[params.productId] && (
+            <Layout>
+                <div>
+                    <h1>{products[params.productId].name}</h1>
+                    <h1>{products[params.productId].id}</h1>
+                </div>
+            </Layout>
+        );
+    }
 }
 
 export default Product;
